@@ -1,3 +1,3 @@
-FROM ginuerzh/gost:latest
+FROM gogost/gost:latest
 ENTRYPOINT ["gost"]
-CMD ["-L","ws://:3000"]
+CMD ["-L","socks5+ws://:3000?udp=true"]
